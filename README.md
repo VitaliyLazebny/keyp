@@ -42,3 +42,9 @@ c. from repo root folder execute: `bundler install`
   |-appium.txt (Appium config file)
   \-Gemfile (list Ruby gems to be installed)
 ```
+
+**appium.txt**
+platformName - Android or iOS (depends from expected testing platform)
+appActivity  - name of application to be tested
+appPackage   - app package
+deviceName   - device name to be tested, you can get it using `adb devices`
