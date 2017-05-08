@@ -11,20 +11,20 @@ Ruby 2.2 + RSpec
 1. Download and install Genymotion Android emulation 
 ( genymotion.com )
 
-2. Download and install Appium server<br>
-a. install NodeJS ( nodejs.org )<br>
+2. Download and install Appium server<br/>
+a. install NodeJS ( nodejs.org )<br/>
 b. from console execute:
 
 ``` 
   npm install -g appium
 ```
-3. Ruby<br>
-a. download and install Ruby 2.2 + RubyDevKit<br>
-b. execute: 'gem install bundler'<br>
+3. Ruby<br/>
+a. download and install Ruby 2.2 + RubyDevKit<br/>
+b. execute: 'gem install bundler'<br/>
 c. from repo root folder execute: `bundler install`
 
 **Execution**:
-1. Clone repo 
+1. Clone repo
 2. Run appium server in separate console: `appium`
 3. Check/update Appium server config: 'appium.txt'
 4. Execute tests itself: `rspec`
@@ -43,8 +43,8 @@ c. from repo root folder execute: `bundler install`
   \-Gemfile (list Ruby gems to be installed)
 ```
 
-**appium.txt**
-platformName - Android or iOS (depends from expected testing platform)
-appActivity  - name of application to be tested
-appPackage   - app package
-deviceName   - device name to be tested, you can get it using `adb devices`
+**appium.txt**<br/>
+platformName - Android or iOS (depends from expected testing platform)<br/>
+appActivity  - name of application to be tested<br/>
+appPackage   - app package<br/>
+deviceName   - device name to be tested, you can get it using `adb devices`<br/>
