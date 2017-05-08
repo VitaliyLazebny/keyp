@@ -1,3 +1,7 @@
+#
+# Parse appium config file to allow use it for automation
+# (same ini-like file for arc tool, for rspec, etc)
+#
 $config   = {}
 filename = '../appium.txt'
 

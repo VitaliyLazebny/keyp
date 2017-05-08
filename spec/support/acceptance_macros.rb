@@ -13,7 +13,7 @@ module AcceptanceMacros
     @page = WiFiPage.new @driver
   end
 
-  def open_saved_networks
+  def open_saved_networks_page
     @page.configure.click
 
     @page = ConfigureWifiPage.new @driver

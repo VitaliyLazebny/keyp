@@ -1,3 +1,6 @@
+#
+# Ruby runtime environment configuration
+#
 require 'rspec'
 require 'rspec/expectations'
 require 'appium_lib'
@@ -24,7 +27,7 @@ RSpec.configure do |config|
       },
       launchTimeout: 180
     }
-    puts options
+
     driver = Appium::Driver.new(options).start_driver
     driver.manage.timeouts.implicit_wait = 3
     Appium.promote_appium_methods Object

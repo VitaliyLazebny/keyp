@@ -1,8 +1,12 @@
+#
+# This class not contains elements.
+# Expected not be instantiated.
+#
 class AbstractPage
   attr_reader :driver
 
   #  -  -  -  -  -  -  -  -  -  -
-  # Class constants
+  # Element class constants (used in locators)
   View    = 'android.widget.TextView'
   Icon    = 'android.widget.ImageView'
   Block   = 'android.widget.LinearLayout'
@@ -13,7 +17,7 @@ class AbstractPage
 
   # -  -  -  -  -  -  -  -  -  -
   # Text constants
-  WiFi    = "Wi\u2011Fi"
+  WiFi    = "Wi\u2011Fi" # there's non-breaking hyphen
 
   # -  -  -  -  -  -  -  -  -  -  -
   # Exception Constants
