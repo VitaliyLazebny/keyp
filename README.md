@@ -1,4 +1,6 @@
-Test task that checks Android Settings application (WiFi)  
+Test task that checks Android Settings application (WiFi)
+Note: checked on Android 7.1.0, other versions of application can require changes in test
+You can use other version to see that tests will fail ;-)
 
 **Tools used**:
 ```
@@ -24,10 +26,10 @@ b. execute: 'gem install bundler'<br/>
 c. from repo root folder execute: `bundler install`
 
 **Execution**:
-1. Clone repo
+1. Run Android 7.1.0 emulation
 2. Run appium server in separate console: `appium`
 3. Check/update Appium server config: 'appium.txt'
-4. Execute tests itself: `rspec`
+4. Execute tests itself from repo root folder: `rspec`
 
 **Folder structure**: 
 ```
@@ -36,10 +38,10 @@ c. from repo root folder execute: `bundler install`
   |   |-page (contains page objects, term taken from web automation )
   |   |-support (contains helper modules for data preparation, page navigation )
   |   |-config.rb 
-  |   |-README.md (this file)
   |   \-spec_helper.rb
   |
   |-appium.txt (Appium config file)
+  |-README.md (this file)
   \-Gemfile (list Ruby gems to be installed)
 ```
 
