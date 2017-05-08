@@ -1,5 +1,13 @@
 require File.expand_path('spec/spec_helper')
 
+# Precondition (before block):
+#   added network
+#
+# Here's testing following:
+#   network is displayed
+#   it's security config if correct
+#   it can be successfully removed
+#
 describe 'Saved Networks' do
   before(:all) do
     @network = 'Test Network'
@@ -8,12 +16,12 @@ describe 'Saved Networks' do
     open_saved_networks_page
   end
 
-  it 'allow user see added network' do
+  it 'allows user see added network' do
     # check network presence on page
     expect(@page.network(@network).text).to match @network
   end
 
-  it 'allow user see network details on pop-up' do
+  it 'allows user see network details on pop-up' do
     # open network popup
     @page.network(@network).click
 
@@ -29,7 +37,7 @@ describe 'Saved Networks' do
     expect(@page.network(@network).text).to match @network
   end
 
-  it 'allow user remove network' do
+  it 'allows user remove network' do
     # check that network present
     expect(@page.network(@network).text).to match @network
 
